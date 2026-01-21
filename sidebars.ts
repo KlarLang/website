@@ -7,7 +7,7 @@ import type {SidebarsConfig} from '@docusaurus/plugin-content-docs';
  - provide next/previous navigation
 
  The sidebars can be generated from the filesystem, or explicitly defined here.
-
+  
  Create as many sidebars as you want.
  */
 const sidebars: SidebarsConfig = {

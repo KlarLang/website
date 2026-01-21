@@ -1,23 +1,218 @@
-/**
- * CSS files with the .module.css suffix will be treated as CSS modules
- * and scoped locally.
- */
-
-.heroBanner {
-  padding: 4rem 0;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
+.hero {
+  padding: 4rem 0 2.25rem;
 }
 
-@media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
-  }
+.heroContainer {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 2rem;
+  align-items: start;
 }
 
-.buttons {
+.brandRow {
   display: flex;
   align-items: center;
-  justify-content: center;
+  gap: 0.9rem;
+}
+
+.logo {
+  width: 54px;
+  height: 54px;
+}
+
+.title {
+  margin: 0;
+  font-size: 3.2rem;
+  letter-spacing: -0.04em;
+  line-height: 1.05;
+}
+
+.tagline {
+  margin: 0.75rem 0 0.5rem;
+  font-size: 1.2rem;
+  color: var(--klar-muted);
+}
+
+.pitch {
+  max-width: 65ch;
+  line-height: 1.6;
+  color: rgba(17, 19, 24, 0.88);
+}
+
+html[data-theme='dark'] .pitch {
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.ctas {
+  margin-top: 1.25rem;
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.textLink {
+  color: var(--klar-ink);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.textLinkOnDark {
+  color: rgba(255, 255, 255, 0.78);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.metaRow {
+  margin-top: 1.2rem;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.pill {
+  padding: 0.35rem 0.6rem;
+  border-radius: 999px;
+  border: 1px solid var(--klar-border);
+  background: var(--klar-surface-2);
+  font-size: 0.9rem;
+}
+
+.heroRight {
+  padding: 1.25rem;
+}
+
+.diagHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.diagTitle {
+  color: rgba(255, 255, 255, 0.75);
+  font-weight: 700;
+}
+
+.diagDivider {
+  border-top: 1px solid rgba(255, 255, 255, 0.10);
+  margin: 0.75rem 0 1rem;
+}
+
+.diagBody {
+  font-size: 1.02rem;
+  line-height: 1.55;
+}
+
+.diagBody code {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.diagHint {
+  margin-top: 0.35rem;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.section {
+  padding: 2.25rem 0;
+}
+
+.sectionAlt {
+  padding: 2.25rem 0;
+  background: var(--klar-surface-2);
+  border-top: 1px solid var(--klar-border);
+  border-bottom: 1px solid var(--klar-border);
+}
+
+.sectionHeader {
+  margin-bottom: 1.25rem;
+}
+
+.sectionTitle {
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+
+.sectionSubtitle {
+  margin-top: 0.5rem;
+  color: var(--klar-muted);
+  max-width: 75ch;
+  line-height: 1.6;
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+}
+
+.grid3 {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.1rem;
+}
+
+.card {
+  border-radius: 16px;
+  padding: 1.25rem;
+}
+
+.cardDark {
+  padding: 1.25rem;
+  border-radius: 18px;
+}
+
+.cardDarkHeader {
+  color: rgba(255, 255, 255, 0.72);
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+}
+
+.cardTitle {
+  margin: 0 0 0.35rem;
+}
+
+.cardText {
+  margin-bottom: 0.75rem;
+  color: rgba(17, 19, 24, 0.82);
+  line-height: 1.6;
+}
+
+html[data-theme='dark'] .cardText {
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.finalCta {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.25rem;
+  align-items: center;
+  border: 1px solid var(--klar-border);
+  border-radius: 18px;
+  padding: 1.5rem;
+  background: var(--klar-surface-3);
+  box-shadow: var(--klar-shadow-soft);
+}
+
+.finalRight {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 996px) {
+  .heroContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .grid2,
+  .grid3 {
+    grid-template-columns: 1fr;
+  }
+
+  .finalCta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }

@@ -89,7 +89,7 @@ const config: Config = {
         {
           title: 'Project',
           items: [
-            { label: 'Author', to: '/docs/project/author' },
+            { label: 'Author', to: '/docs/author' },
           ],
         },
       ],

@@ -43,3 +43,9 @@ Note:
   Even 'void' functions must return explicitly.
 
 ```
+
+:::info Important
+Furthermore, only ONE function return is allowed and it MUST explicitly be located at the end of the function, that is, returns within the scope of control structures are not allowed.
+
+Early returns cause an error.
+:::

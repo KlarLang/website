@@ -51,7 +51,7 @@ function HeroHeader() {
           </div>
         </div>
 
-        {/* Right: Klar Snapshot (replaces the error card) */}
+        {/* Right: Klar Snapshot */}
         <div className={clsx('klarCardDark', styles.heroRight)}>
           <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', gap: '1rem' }}>
             <div>

@@ -1,5 +1,5 @@
 :root {
-  --klar-bg: #f4f5f7;
+  --klar-bg: #fdeeee;
   --klar-surface: #ffffff;
   --klar-ink: #111318;
   --klar-muted: #6b7280;
@@ -38,7 +38,7 @@
 }
 
 html[data-theme='dark'] {
-  --klar-bg: #0f1115;
+  --klar-bg: #121217;
   --klar-surface: #151923;
   --klar-ink: rgba(255, 255, 255, 0.92);
   --klar-muted: rgba(255, 255, 255, 0.65);

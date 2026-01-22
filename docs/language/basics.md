@@ -19,7 +19,7 @@ Klar requires:
 
 ## File Extension
 
-The official extension for Klar source files is `.kl`.
+The official extension for Klar source files is `.kl`(recommended) or `.klar`.
 
 ---
 
@@ -130,3 +130,4 @@ The following features are currently **not** implemented:
 * Structs / User-defined types
 * Module imports / Cross-file linking
 * Type Casting
+

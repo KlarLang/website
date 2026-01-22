@@ -1,0 +1,30 @@
+{
+  "title": {
+    "message": "Klar",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "Klar",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Docs": {
+    "message": "Documentação",
+    "description": "Navbar item with label Docs"
+  },
+  "item.label.Get Started": {
+    "message": "Primeiros Passos",
+    "description": "Navbar item with label Get Started"
+  },
+  "item.label.Diagnostics": {
+    "message": "Diagnósticos",
+    "description": "Navbar item with label Diagnostics"
+  },
+  "item.label.Author": {
+    "message": "Autor",
+    "description": "Navbar item with label Author"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item with label GitHub"
+  }
+}

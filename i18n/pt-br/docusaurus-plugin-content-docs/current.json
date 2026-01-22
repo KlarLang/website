@@ -1,0 +1,30 @@
+{
+  "version.label": {
+    "message": "Próxima",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.Introduction": {
+    "message": "Introdução",
+    "description": "The label for category Introduction in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Get Started": {
+    "message": "Primeiros Passos",
+    "description": "The label for category Get Started in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Language": {
+    "message": "Linguagem",
+    "description": "The label for category Language in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Diagnostics": {
+    "message": "Diagnósticos",
+    "description": "The label for category Diagnostics in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Internals": {
+    "message": "Internos",
+    "description": "The label for category Internals in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Contributing": {
+    "message": "Contribuindo",
+    "description": "The label for category Contributing in sidebar tutorialSidebar"
+  }
+}

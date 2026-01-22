@@ -89,5 +89,5 @@ Start with:
 * the diagnostic code (`[K:Exxx]`)
 * the category (LEXICAL, SYNTAX, SEMANTIC, BACKEND, CLI)
 * the fix section
-
-Then jump to the Diagnostics docs.
+    
+Further on, the Diagnostic Docs explain this in more detail.

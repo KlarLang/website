@@ -22,7 +22,7 @@ source ~/.bashrc
 
 ## Invalid file type (CLI error)
 
-Klar only processes `.kl` (documented standard).
+Klar only processes `.kl` or `.klar` (documented standard).
 
 Example:
 
@@ -38,15 +38,16 @@ Typical output:
 ERROR (CLI)
 at input file
 
+The file 'a' is not a Klar source file.
+
 Cause:
-  Klar only processes files with the extension '.kl'.
+  Klar only processes files with the extensions '.kl' and '.klar'.
 
 Fix:
-  Rename the file or select a valid '.kl' source.
+  Rename the file or select a valid '.kl' or '.klar' source.
 
 Example:
   kc run program.kl
-
 ```
 
 ---

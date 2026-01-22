@@ -58,6 +58,6 @@ Used to verify tokenization.
 
 ```bash
 kc lex src/main.kl
-kc lex src/main.kl -st   # show tokens table
+kc lex src/main.kl -st   # or '--show-tokens', both show a token table.
 
 ```

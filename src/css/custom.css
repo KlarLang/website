@@ -180,3 +180,187 @@ html[data-theme='light'] .card .theme-code-block code,
 html[data-theme='light'] .card .theme-code-block span {
   color: #e3e3e3 !important;
 }
+
+/* ========================================
+   RESPONSIVIDADE
+   ======================================== */
+
+/* Tablets e dispositivos médios (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+  .card {
+    border-radius: 14px;
+    padding: 1.25rem;
+  }
+
+  .theme-code-block {
+    border-radius: 14px;
+  }
+
+  .klarCardDark {
+    border-radius: 16px;
+    padding: 1.5rem;
+  }
+
+  .navbar {
+    backdrop-filter: blur(8px);
+  }
+}
+
+/* Smartphones e dispositivos pequenos (até 768px) */
+@media screen and (max-width: 768px) {
+  :root {
+    --klar-shadow: 0 6px 20px rgba(0, 0, 0, 0.10);
+    --klar-shadow-soft: 0 4px 12px rgba(0, 0, 0, 0.08);
+    --ifm-code-font-size: 85%;
+  }
+
+  html[data-theme='dark'] {
+    --klar-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+    --klar-shadow-soft: 0 4px 12px rgba(0, 0, 0, 0.28);
+  }
+
+  .card {
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: var(--klar-shadow-soft);
+  }
+
+  .theme-code-block {
+    border-radius: 12px;
+    font-size: 0.85rem;
+  }
+
+  .theme-code-block pre {
+    padding: 0.75rem;
+  }
+
+  .klarCardDark {
+    border-radius: 14px;
+    padding: 1.25rem;
+  }
+
+  .button {
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .klarBadgeError {
+    padding: 5px 8px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+  }
+
+  .klarLogo {
+    width: 55px;
+  }
+
+  .navbar {
+    backdrop-filter: blur(6px);
+  }
+
+  /* Melhorar legibilidade em telas pequenas */
+  body {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+  }
+}
+
+/* Smartphones muito pequenos (até 480px) */
+@media screen and (max-width: 480px) {
+  :root {
+    --ifm-code-font-size: 80%;
+  }
+
+  .card {
+    border-radius: 10px;
+    padding: 0.875rem;
+  }
+
+  .theme-code-block {
+    border-radius: 10px;
+    font-size: 0.8rem;
+  }
+
+  .theme-code-block pre {
+    padding: 0.625rem;
+    overflow-x: auto;
+  }
+
+  .klarCardDark {
+    border-radius: 12px;
+    padding: 1rem;
+  }
+
+  .button {
+    border-radius: 8px;
+    padding: 0.45rem 0.875rem;
+    font-size: 0.85rem;
+  }
+
+  .klarBadgeError {
+    padding: 4px 7px;
+    border-radius: 7px;
+    font-size: 0.8rem;
+  }
+
+  .klarLogo {
+    width: 50px;
+  }
+
+  body {
+    font-size: 0.9rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+}
+
+/* Melhorias para telas touch */
+@media (hover: none) and (pointer: coarse) {
+
+  .button,
+  a {
+    min-height: 44px;
+    /* Tamanho mínimo recomendado para toque */
+    display: inline-flex;
+    align-items: center;
+  }
+
+  /* Aumentar áreas clicáveis */
+  .navbar__item {
+    padding: 0.5rem 0.75rem;
+  }
+}
+
+/* Otimização para landscape em dispositivos móveis */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+  .navbar {
+    padding: 0.5rem 0;
+  }
+
+  .card {
+    margin-bottom: 1rem;
+  }
+}

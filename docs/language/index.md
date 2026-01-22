@@ -1,4 +1,0 @@
----
-slug: /language
-title: Diagnostics
----

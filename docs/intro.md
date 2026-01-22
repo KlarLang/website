@@ -1,47 +1,80 @@
 ---
+title: Introduction
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Klar
 
-Let's discover **Docusaurus in less than 5 minutes**.
+Klar is an **experimental transpiled language** designed around two non-negotiable goals:
 
-## Getting Started
+1) **Extreme reliability through explicitness**  
+2) **Native interoperability between languages** (starting with Java/JVM today)
 
-Get started by **creating a new site**.
+Klar is not trying to compete with “general purpose” languages as a replacement.  
+It is a language/toolchain experiment focused on making boundaries, assumptions, and intent explicit.
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+---
 
-### What you'll need
+## What Klar refuses to do
 
-- [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+Klar is built on a simple belief:
 
-## Generate a new site
+> Ambiguity is more dangerous than verbosity.
 
-Generate a new Docusaurus site using the **classic template**.
+So Klar refuses to:
+- Guess developer intent
+- Introduce silent defaults
+- “Help” by changing meaning implicitly
+- Trade clarity for brevity
 
-The classic template will automatically be added to your project after you run the command:
+---
 
-```bash
-npm init docusaurus@latest my-website classic
-```
+## Current status
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+Klar is **experimental** and **unstable before v1.0.0**.  
+Breaking changes are expected.
 
-The command also installs all necessary dependencies you need to run Docusaurus.
+What is **stable-ish** today:
+- Lexer (most stable component)
+- End-to-end `kc run` workflow (works and is usable)
 
-## Start your site
+What is **still unstable**:
+- Parser
+- Type checker
+- Transpiler/codegen
 
-Run the development server:
+---
 
-```bash
-cd my-website
-npm run start
-```
+## What works today (minimum reality)
 
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
+Klar can:
+- Lex, parse, type-check, transpile to Java, compile with `javac`, and run with `java`
+- Produce structured diagnostics (LEXICAL / SYNTAX / SEMANTIC / BACKEND / CLI)
+- Run a single `.kl` file at a time
 
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
+Klar **does not** support yet:
+- Arrays (planned)
+- Modules/imports (keywords exist, but currently placebo)
+- Structs / user-defined types
+- Multi-file symbol linking (multiple files exist, but you cannot import/call functions across files)
 
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+---
+
+## The one rule that surprises people
+
+Klar is strict about “finishing what you started”:
+
+- **Every function must have `@Use("java")`** (required on all methods by design)
+- **Every function must return explicitly** (including `void`)
+- **Control structures terminate explicitly** (`afterall` is mandatory; its body is optional)
+
+This is not “missing features”. It is the design.
+
+---
+
+## Next steps
+
+- Start here: **Get Started → Install**
+- Then: **Hello World**
+- Then: **Language Basics**
+- If you care about the core idea: **Diagnostics**

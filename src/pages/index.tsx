@@ -27,10 +27,27 @@ function HeroHeader() {
 
           <p className={styles.tagline}>{siteConfig.tagline}</p>
 
+          {/* NEW: Thesis first (problem framing) */}
           <p className={styles.pitch}>
-            Klar is an experimental language focused on <strong>explicitness</strong>, <strong>rigor</strong>,
-            and <strong>deterministic compilation</strong>. It treats diagnostics as a stable API — not a side effect.
+            Klar exists to fight the <strong>upgrade treadmill</strong>: systems that require periodic “big rewrites” because
+            the stack evolves through accumulated <strong>implicit behavior</strong>, <strong>defaults</strong>, and <strong>patch-on-patch</strong> fixes.
           </p>
+
+          <p className={styles.pitch}>
+            Klar is an experimental language focused on <strong>explicitness</strong>, <strong>rigor</strong>, and{' '}
+            <strong>deterministic compilation</strong>. It treats diagnostics as a stable API — not a side effect — because
+            long-lived systems need <strong>predictable meaning</strong>, not guessed intent.
+          </p>
+
+          {/* NEW: Who this is for (kept minimal; no CSS changes) */}
+          <div style={{ marginTop: '0.9rem', maxWidth: '72ch' }}>
+            <div style={{ fontWeight: 800, letterSpacing: '0.2px' }}>This is for you if:</div>
+            <ul style={{ margin: '0.55rem 0 0', paddingLeft: '1.15rem', lineHeight: 1.6 }}>
+              <li>You’ve inherited a codebase where updates feel like paying off yesterday’s workaround.</li>
+              <li>You want fewer “major migrations” because the <strong>semantics</strong> stay stable.</li>
+              <li>You care about <strong>actionable diagnostics</strong> and <strong>no silent fallbacks</strong> as a contract.</li>
+            </ul>
+          </div>
 
           <div className={styles.ctas}>
             <Link className="button button--primary button--lg" to="/docs/get-started">
@@ -76,6 +93,12 @@ function HeroHeader() {
           <div style={{ borderTop: '1px solid rgba(255,255,255,0.10)', margin: '0.9rem 0 1rem' }} />
 
           <div style={{ display: 'grid', gap: '.6rem', fontSize: '0.98rem', lineHeight: 1.5 }}>
+            {/* NEW: Add the “why” in one line without changing layout */}
+            <div>
+              <span style={{ color: 'rgba(255,255,255,0.72)', fontWeight: 700 }}>Why:</span>{' '}
+              <span>Reduce rewrite cycles by making semantics explicit</span>
+            </div>
+
             <div>
               <span style={{ color: 'rgba(255,255,255,0.72)', fontWeight: 700 }}>Core:</span>{' '}
               <span>Explicitness • Determinism • Diagnostics</span>
@@ -231,7 +254,7 @@ export default function Home() {
   return (
     <Layout
       title={siteConfig.title}
-      description="Klar is an experimental language focused on explicitness, rigor, deterministic compilation, and stable diagnostics.">
+      description="Klar is an experimental language that treats ambiguity as a design defect: explicit semantics, deterministic compilation, and stable diagnostics to reduce rewrite cycles.">
       <main>
         <HeroHeader />
         <QuickStart />

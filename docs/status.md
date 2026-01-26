@@ -7,7 +7,7 @@ sidebar_position: 99
 
 Klar is currently in an **experimental state**. 
 
-The current versioning line is **v0.x** (e.g., v0.14.1). This means the language is still evolving rapidly, and we prioritize correctness and architectural integrity over feature completeness.
+The current versioning line is **v0.x** (e.g., v0.15.0). This means the language is still evolving rapidly, and we prioritize correctness and architectural integrity over feature completeness.
 
 :::danger Breaking Changes
 Before version **1.0.0**, you should expect breaking changes in:

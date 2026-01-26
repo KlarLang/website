@@ -10,9 +10,10 @@ Current pipeline (high level):
 1) Lexer  
 2) Parser  
 3) Type checking / semantic validation  
-4) Transpile to Java source  
-5) Compile with `javac`  
-6) Run with `java`
+4) IR / Intent Resolution 
+5) Transpile to Java source  
+6) Compile with `javac`  
+7) Run with `java`
 
 Notes:
 - lexer is the most stable component today

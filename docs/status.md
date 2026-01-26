@@ -25,7 +25,7 @@ We are transparent about what is ready for use and what is still under heavy con
 | Component | Status | Description |
 | :--- | :--- | :--- |
 | **Lexer** | 🟢 Stable | Highly reliable tokenization of `.kl` files. |
-| **Diagnostics** | 🟢 Stable | Consistent format and structured error reporting. |
+| **Diagnostics** | 🟡 Unstable | Consistent format and structured error reporting. |
 | **CLI** | 🟡 Unstable | `kc run` works for single-file compilation. |
 | **Parser** | 🟡 Unstable | Core grammar is solid, but edge cases are being refined. |
 | **Type Checker** | 🔴 Experimental | Basic type safety is enforced; advanced checks are pending. |
